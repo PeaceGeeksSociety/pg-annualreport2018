@@ -323,13 +323,14 @@
 	var ssCharts = function() {
 
 		// Labels
-		var years = [2015, 2016, 2017];
-		var sourcecategory = ['Grants (83.8%)', 'Corporate (0.3%)', 'Individual (1.6%)', 'Fees (14.3%)'];
-		var spendcategory = ['Projects (93.3%)', 'Operations (2.2%)', 'Administration (4.4%)', 'Marketing (0.1%)'];
+		var years = [2016, 2017, 2018];
+		var sourcecategory = ['Grants (89%)', 'Project Fees (7%)', 'Donations (3%)'];
+		var spendcategory = ['Projects (83%)', 'Operations (12%)', 'Administration (3%)'];
 		// Numbers
-		var fundingbyyear = [214099, 321941, 390490.90];
-		var fundingsource = [327173.30, 1169.22, 6338.50, 55809.88];
-		var spending = [378899.70, 8937.46, 17886.24, 337.84];
+		var fundingbyyear = [321941, 365608, 752894];
+		var fundingsource = [670598, 56437, 25859];
+		var spending = [688519, 100180, 22315];
+ 
 
 		function isScrolledIntoView(elem)
 		{
@@ -514,7 +515,7 @@
 	var ssStats = function() {
 	   var statSection = $("#stats"),
 	       stats = $(".stat-count");
-
+	        console.log(stats)
 	   statSection.waypoint({
 
 	   	handler: function(direction) {
@@ -525,7 +526,7 @@
 					   var $this = $(this);
 
 					   $({ Counter: 0 }).animate({ Counter: $this.text() }, {
-					   	duration: 4000,
+					   	duration: 5700,
 					   	easing: 'swing',
 					   	step: function (curValue) {
 					   		var num = numberWithCommas (curValue);
@@ -550,6 +551,17 @@
         return parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",") + (parts[1] ? "." + parts[1] : "");  
     } 
 
+/* Gallery
+	* ------------------------------------------------------ */
+
+  var ssGallery = function() {
+	  $('.slide:gt(0)').hide();
+	  setInterval(function() {
+	    $('.slide:first').fadeOut('slow').next().fadeIn('slow').end().appendTo('.slider');
+	  }, 2500)
+	};
+
+
   /* Initialize
 	* ------------------------------------------------------ */
 	(function ssInit() {
@@ -570,6 +582,7 @@
 		ssBackToTop();
 		ssCharts();
 		ssStats();
+		ssGallery();
 
 	})();
  

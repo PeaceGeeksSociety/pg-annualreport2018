@@ -1622,7 +1622,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 768px) {
   #home {
-    min-height: 1100px;
+    min-height: 1150px;
   }
   .home-content-tablecell .row {
     max-width: 600px;
@@ -1655,7 +1655,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 600px) {
   #home {
-    min-height: 1100px;
+    min-height: 1150px;
   }
   .home-content-tablecell .row {
     padding-top: 3rem;
@@ -1670,7 +1670,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 500px) {
   #home {
-    min-height: 1200px;
+    min-height: 1250px;
   }
   .home-content-tablecell .row {
     max-width: 420px;
@@ -1694,7 +1694,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 400px) {
   #home {
-    min-height: 1200px;
+    min-height: 1250px;
   }
 
   .home-content-tablecell .row {
@@ -1710,11 +1710,70 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 
+/* ===================================================================
+ *  11. gallery - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+  #gallery .slider {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  #gallery .container {
+    width: 840px;
+    height: 560px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:8rem;
+    overflow:hidden;
+  }
+
+  #gallery .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:auto;
+  }
+
+  #gallery .slide img {
+    width: 100%;
+    height: 100%;
+    border-radius:5px;
+  }
+
+  #gallery ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media only screen and (max-width: 900px) {
+  #gallery .container {
+    width: 540px;
+    height: 360px;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+  #gallery .container {
+    width: 420px;
+    height: 280px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #gallery .container {
+    width: 300px;
+    height: 200px;
+  }
+}
 
 /* ===================================================================
  *  11. founder and chair - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
+
 #founder,
 #chair {
   position: relative;
@@ -1732,7 +1791,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #founder .about-wrap, 
 #chair .about-wrap {
-  max-width: 850px;
+  max-width: 1130px;
 }
 #founder span,
 #chair span {
@@ -1897,17 +1956,31 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *  12. mission - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
-#mission {
+.canada-bg {
   background-color: #474f5e;
-  background-image: url(../images/how-bg.jpg);
+  background-image: url(../images/photos/PeaceTalks.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  min-height: 800px;
+  /*min-height: 800px;*/
   position: relative;
-  padding: 15rem 0 5rem;
+  padding: 15rem 0 2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.jordan-bg {
+  background-color: #474f5e;
+  background-image: url(../images/photos/JordanVolunteers.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  /*min-height: 800px;*/
+  position: relative;
+  padding: 15rem 0 2rem;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1928,7 +2001,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(71, 79, 94, 0.95);
+  background-color: rgba(71, 79, 94, 0.8);
 }
 #mission .gradient-overlay {
   position: absolute;
@@ -1966,19 +2039,19 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #mission .services-list .service-item p {
   color: rgba(242, 242, 242, 0.6);
 }
-#mission .services-list .icon {
+#programs .icon {
   display: inline-block;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
-#mission .services-list .icon i {
+#programs .icon i {
   font-size: 5rem;
   color: #f09416;
 }
-#mission .services-list .h05 {
+#programs .h05 {
   font-size: 1.7rem;
   line-height: 1.765;
-  color: #FFFFFF;
-  margin-bottom: 3rem;
+  color: #F09416;
+  margin-bottom: 2rem;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1997,7 +2070,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 768px) {
   #mission {
-    padding: 12rem 0 4rem;
+    padding: 12rem 0 1rem;
   }
   #mission .services-content {
     max-width: 550px;
@@ -2005,7 +2078,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   #mission .services-list .service-item {
     padding: 0 15px;
   }
-  #mission .services-list .icon i {
+  #programs .icon i {
     font-size: 5.1rem;
   }
 }
@@ -2013,7 +2086,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   #mission .services-list .service-item {
     padding: 0 10px;
   }
-  #mission .services-list .icon i {
+  #programs .icon i {
     font-size: 5rem;
   }
 }
@@ -2484,7 +2557,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 #partners {
   background-color: #e6e6e6;
-  padding: 4.8rem 0 4.8rem;
+  padding: 10rem 0 4.8rem;
 }
 
 #partners .section-intro h3 {
@@ -2936,6 +3009,52 @@ footer h4.h05::after {
   background: #e6e6e6;
 }
 
+.info-entry .half-grey-a {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #e6e6e6;
+  background-image: url(../images/photos/g-SATurkey4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.info-entry .half-grey-b {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #e6e6e6;
+  background-image: url(../images/photos/WhiteHelmets2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.info-entry .half-grey-c {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #e6e6e6;
+  background-image: url(../images/photos/Jordan3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+
 .info-entry .info-entry-content {
   position: relative;
 }
@@ -2950,41 +3069,36 @@ footer h4.h05::after {
   z-index: 600;
 }
 
-.info-entry:nth-child(even) .media-wrap {
+.info-entry:nth-child(odd) .media-wrap {
   left: 50%;
   padding-left: 0;
   padding-right: 20px;
 }
 
-.info-entry:nth-child(even) .text-part {
+.info-entry:nth-child(odd) .text-part {
   padding-left: 20px;
   padding-right: 70px;
 }
 
-.info-entry:nth-child(odd) .half-grey {
+.info-entry:nth-child(even) .half-grey {
   left: 0;
 }
 
-.info-entry:nth-child(odd) .media-wrap {
+.info-entry:nth-child(even) .media-wrap {
   left: 0;
   padding-right: 0;
   padding-left: 20px;
 }
 
-.info-entry:nth-child(odd) .text-part {
+.info-entry:nth-child(even) .text-part {
   padding-left: 70px;
   padding-right: 20px;
   float: right;
 }
 
 .info-entry-content {
-  padding-top: 13.2rem;
-  padding-bottom: 10.8rem;
-}
-
-.info-entry-content .rightside{
-  margin-top:10rem;
-  padding-left:50px;
+  padding-top: 9rem;
+  padding-bottom: 7rem;
 }
 
 .info-entry-content h2 {
@@ -3019,7 +3133,7 @@ footer h4.h05::after {
   color: rgba(71, 79, 94, 0.5);
 }
 
-.info-entry:nth-child(even) .sponsors h5 {
+.info-entry:nth-child(odd) .sponsors h5 {
   text-align: right;
 }
 
@@ -3031,22 +3145,22 @@ footer h4.h05::after {
   -ms-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
   height: 4rem;
-  margin: 0 3rem;
+  margin: 1rem 3rem;
 }
 
 .sponsors img:hover {
   opacity: 1;
 }
 
-.info-entry:nth-child(even) .sponsors {
+.info-entry:nth-child(odd) .sponsors {
   float:right;
 }
 
-.info-entry:nth-child(even) .sponsors img{
+.info-entry:nth-child(odd) .sponsors img{
   margin-right: 0;
 }
 
-.info-entry:nth-child(odd) .sponsors img{
+.info-entry:nth-child(even) .sponsors img{
   margin-left: 0;
 }
 
@@ -3060,28 +3174,23 @@ footer h4.h05::after {
  * ------------------------------------------------------------------- */
 
 @media only screen and (max-width:1024px) {
-  .info-entry:nth-child(odd) .media-wrap {
+  .info-entry:nth-child(even) .media-wrap {
     padding-right: 20px;
   }
 
-  .info-entry:nth-child(odd) .text-part {
+  .info-entry:nth-child(even) .text-part {
     padding-left: 20px;
     padding-right: 40px;
   }
 
-  .info-entry:nth-child(even) .media-wrap {
+  .info-entry:nth-child(odd) .media-wrap {
     padding-left: 20px;
   }
 
-  .info-entry:nth-child(even) .text-part {
+  .info-entry:nth-child(odd) .text-part {
     padding-left: 40px;
     padding-right: 20px;
   }
-
-  .info-entry-content .rightside{
-    margin-top:0rem;
-    padding-left:0px;
-}
 
 }
 
@@ -3091,14 +3200,17 @@ footer h4.h05::after {
     padding-bottom: 3rem;
   }
 
-  .info-entry .half-grey {
+  .info-entry .half-grey,
+  .info-entry .half-grey-a,
+  .info-entry .half-grey-b,
+  .info-entry .half-grey-c {
     display: none;
   }
 
   .info-entry .info-entry-content {
     max-width: 600px;
-    padding-top: 9rem;
-    padding-bottom: 7.8rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
     border-bottom: 1px solid rgba(0, 24, 53, 0.1);
   }
 
