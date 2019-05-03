@@ -2585,6 +2585,34 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #59c2ed;
 }
 
+.key-partners {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 4rem;
+  text-align: center;
+}
+
+.key-partners img{
+  opacity: .6;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  height: 4rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display:inline-block;
+  margin-bottom:3rem;
+  margin-top:3rem;
+}
+
+.key-partners img:hover {
+  opacity: 1;
+}
+
+
 #partners .client-lists .owl-item {
   opacity: .6;
   -moz-transition: all 0.6s ease-in-out;
