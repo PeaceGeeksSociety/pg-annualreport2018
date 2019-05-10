@@ -1958,7 +1958,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 .canada-bg {
   background-color: #474f5e;
-  background-image: url(../images/photos/PeaceTalks.jpg);
+  background-image: url(../images/photos/PeaceTalks1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -3059,7 +3059,7 @@ footer h4.h05::after {
   left: 50%;
   top: 0;
   background-color: #e6e6e6;
-  background-image: url(../images/photos/WhiteHelmets2.jpg);
+  background-image: url(../images/photos/WhiteHelmets.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -3336,7 +3336,6 @@ footer h4.h05::after {
  * ------------------------------------------------------------------- */
 #download {
   position: relative;
-  background-image: url(../images/intro-bg.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
